@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@sveltejs/vite-plugin-svelte': ^1.0.1
+  '@types/intl-tel-input': ^17.0.5
   '@typescript-eslint/eslint-plugin': ^4.0.0
   '@typescript-eslint/parser': ^4.0.0
   '@vitebook/client': ^0.100.5
@@ -16,6 +17,7 @@ specifiers:
   eslint-plugin-simple-import-sort: ^7.0.0
   eslint-plugin-svelte3: ^3.0.0
   husky: ^7.0.0
+  intl-tel-input: ^17.0.18
   lint-staged: ^11.0.0
   npm-run-all: ^4.0.0
   postcss: ^8.0.0
@@ -27,6 +29,7 @@ specifiers:
 
 devDependencies:
   '@sveltejs/vite-plugin-svelte': 1.0.1_svelte@3.49.0+vite@3.0.6
+  '@types/intl-tel-input': 17.0.5
   '@typescript-eslint/eslint-plugin': 4.33.0_3ekaj7j3owlolnuhj3ykrb7u7i
   '@typescript-eslint/parser': 4.33.0_hxadhbs2xogijvk7vq4t2azzbu
   '@vitebook/client': 0.100.5_ga7inf6cd3rrroqbbwbwgnq5by
@@ -41,6 +44,7 @@ devDependencies:
   eslint-plugin-simple-import-sort: 7.0.0_eslint@7.32.0
   eslint-plugin-svelte3: 3.4.1_k4rvtr32uzrs6rwp57u73ssa6q
   husky: 7.0.4
+  intl-tel-input: 17.0.18
   lint-staged: 11.2.6
   npm-run-all: 4.1.5
   postcss: 8.4.16
@@ -184,6 +188,18 @@ packages:
       '@types/node': 18.7.1
     dev: true
 
+  /@types/intl-tel-input/17.0.5:
+    resolution: {integrity: sha512-Fy78eswLvfx82vZ/N5/gsC9Cping2PNSU28VIcs4frmVwH2rnoyiRhwEMrMrUeZ1NiuvDxHrsTMwz6CDpngbBg==}
+    dependencies:
+      '@types/jquery': 3.5.14
+    dev: true
+
+  /@types/jquery/3.5.14:
+    resolution: {integrity: sha512-X1gtMRMbziVQkErhTQmSe2jFwwENA/Zr+PprCkF63vFq+Yt5PZ4AlKqgmeNlwgn7dhsXEK888eIW2520EpC+xg==}
+    dependencies:
+      '@types/sizzle': 2.3.3
+    dev: true
+
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
     dev: true
@@ -221,6 +237,10 @@ packages:
 
   /@types/parse-json/4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
+    dev: true
+
+  /@types/sizzle/2.3.3:
+    resolution: {integrity: sha512-JYM8x9EGF163bEyhdJBpR2QX1R5naCJHC8ucJylJ3w9/CVBaskdQ8WqBf8MmQrd1kRvp/a4TS8HJ+bxzR7ZJYQ==}
     dev: true
 
   /@typescript-eslint/eslint-plugin/4.33.0_3ekaj7j3owlolnuhj3ykrb7u7i:
@@ -1759,6 +1779,10 @@ packages:
       get-intrinsic: 1.1.2
       has: 1.0.3
       side-channel: 1.0.4
+    dev: true
+
+  /intl-tel-input/17.0.18:
+    resolution: {integrity: sha512-U+ugXhOrYO/6ggIWKccsXcfAEWzjnTBLXK8c/71zvatjSPNz3TgVnXH8KhotaPh+4mBxXy4SlNOgsbXiecfPSA==}
     dev: true
 
   /is-arrayish/0.2.1:
