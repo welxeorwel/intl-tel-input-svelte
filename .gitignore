@@ -3,3 +3,6 @@
 .temp
 node_modules/
 dist/
+src/intl-tel-input-transformed
+.vscode
+.eslintcache

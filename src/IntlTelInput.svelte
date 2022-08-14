@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import intlTelInput from 'intl-tel-input/build/js/intlTelInput';
+  import intlTelInput from './intl-tel-input-transformed/intlTelInput.min';
   import type { Options } from 'intl-tel-input';
 
   import 'intl-tel-input/build/css/intlTelInput.css';
@@ -10,8 +10,9 @@
   let inputRef: HTMLElement;
 
   onMount(async () => {
-    await import('intl-tel-input/build/js/utils');
+    await import('./intl-tel-input-transformed/utils.js');
 
+    // @ts-expect-error TODO: add type declarations
     intlTelInput(inputRef, { ...initialOptions });
   });
 </script>
