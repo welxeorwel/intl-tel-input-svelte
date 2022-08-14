@@ -27,7 +27,7 @@
     "strictNullChecks": true,
     "target": "esnext",
     "useDefineForClassFields": false,
-    "types": ["node", "vite/client"],
+    "types": ["node", "vite/client", "./node_modules/@types/**/*"],
     "jsx": "preserve"
   },
   "include": ["transformDeps.ts", "src"]

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import intlTelInput from './intl-tel-input-transformed/intlTelInput.min';
   import type { Options } from 'intl-tel-input';
+  import intlTelInput from './intl-tel-input-transformed/intlTelInput.min';
 
   import 'intl-tel-input/build/css/intlTelInput.css';
 
@@ -12,8 +12,9 @@
   onMount(async () => {
     await import('./intl-tel-input-transformed/utils.js');
 
-    // @ts-expect-error TODO: add type declarations
-    intlTelInput(inputRef, { ...initialOptions });
+    (intlTelInput as unknown as Window['intlTelInput'])(inputRef, {
+      ...initialOptions,
+    });
   });
 </script>
 
