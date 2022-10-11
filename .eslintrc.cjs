@@ -8,7 +8,7 @@ module.exports = {
     "project": "./tsconfig.json",
     "parser": "@typescript-eslint/parser",
     "ecmaVersion": 2020,
-    "sourceType": "module"
+    "sourceType": "module",
   },
   "ignorePatterns": [
     ".eslintrc.js"

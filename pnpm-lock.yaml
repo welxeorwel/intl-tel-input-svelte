@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': ^7.18.10
+  '@playwright/test': ^1.26.1
   '@sveltejs/vite-plugin-svelte': ^1.0.1
   '@types/babel__core': ^7.1.19
   '@types/intl-tel-input': ^17.0.5
@@ -36,6 +37,7 @@ specifiers:
 
 devDependencies:
   '@babel/core': 7.18.10
+  '@playwright/test': 1.26.1
   '@sveltejs/vite-plugin-svelte': 1.0.1_svelte@3.49.0+vite@3.0.6
   '@types/babel__core': 7.1.19
   '@types/intl-tel-input': 17.0.5
@@ -387,6 +389,15 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
+    dev: true
+
+  /@playwright/test/1.26.1:
+    resolution: {integrity: sha512-bNxyZASVt2adSZ9gbD7NCydzcb5JaI0OR9hc7s+nmPeH604gwp0zp17NNpwXY4c8nvuBGQQ9oGDx72LE+cUWvw==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      '@types/node': 18.7.2
+      playwright-core: 1.26.1
     dev: true
 
   /@rollup/pluginutils/4.2.1:
@@ -2762,6 +2773,12 @@ packages:
   /pify/3.0.0:
     resolution: {integrity: sha512-C3FsVNH1udSEX48gGX1xfvwTWfsYWj5U+8/uK15BGzIGrKoUpghX8hWZwa/OFnakBiiVNmBvemTJR5mcy7iPcg==}
     engines: {node: '>=4'}
+    dev: true
+
+  /playwright-core/1.26.1:
+    resolution: {integrity: sha512-hzFchhhxnEiPc4qVPs9q2ZR+5eKNifY2hQDHtg1HnTTUuphYCBP8ZRb2si+B1TR7BHirgXaPi48LIye5SgrLAA==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /please-upgrade-node/3.2.0:

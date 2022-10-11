@@ -15,10 +15,12 @@
     "lint:prettier": "prettier . --check --ignore-path .gitignore --loglevel warn",
     "format:prettier": "npm run lint:prettier -- --write",
     "prepare": "husky install",
-    "postinstall": "pnpm transform-deps"
+    "postinstall": "pnpm transform-deps",
+    "tests": "pnpm playwright test tests"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
+    "@playwright/test": "^1.26.1",
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
     "@types/babel__core": "^7.1.19",
     "@types/intl-tel-input": "^17.0.5",

@@ -6,3 +6,6 @@ dist/
 src/intl-tel-input-transformed/
 .vscode
 .eslintcache
+/test-results/
+/playwright-report/
+/playwright/.cache/

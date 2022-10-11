@@ -15,6 +15,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "newLine": "lf",
+    "noEmit": true,
     "noImplicitAny": false,
     "noImplicitReturns": true,
     "noUnusedLocals": false,
@@ -27,8 +28,8 @@
     "strictNullChecks": true,
     "target": "esnext",
     "useDefineForClassFields": false,
-    "types": ["node", "vite/client", "./node_modules/@types/**/*"],
+    "types": ["node", "vite/client"],
     "jsx": "preserve"
   },
-  "include": ["transformDeps.ts", "src"]
+  "include": ["transformDeps.ts", "src", "tests", "playwright.config.ts"]
 }
