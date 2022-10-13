@@ -17,11 +17,26 @@ export class Phoneinput {
 
   async countryPick(country: string) {
     await this.countyPickMenu.nth(1).click();
-    await this.page.locator('text=' + country).click();
+    if (country == 'United Kingdom') {
+      await this.page
+        .locator('#iti-0__item-gb-preferred >> text=United Kingdom')
+        .click();
+    } else if (country == 'United States') {
+      await this.page.locator('#iti-0__item-us-preferred').click();
+    } else {
+      await this.page.locator('text=' + country).click();
+    }
   }
 
   async fillPhone(phone: string) {
     await this.telInput.fill(phone);
+  }
+  async countryListArrowScroll(times: number) {
+    await this.countyPickMenu.nth(1).click();
+    for (let i = times; i > 0; i--) {
+      await this.page.keyboard.press('ArrowDown');
+    }
+    await this.page.keyboard.press('Enter');
   }
 }
 
